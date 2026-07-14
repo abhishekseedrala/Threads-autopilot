@@ -9,6 +9,16 @@
       "local_date": "2026-07-14",
       "local_hour": 15,
       "insights": null
+    },
+    {
+      "media_id": "18089730674563876",
+      "text": "3 things nobody tells you about hands-off Threads growth:\n\n1. The official Threads API exists and is free \u2014 no shady bots, no browser hacks.\n2. A single 2-hour setup with GitHub Actions + free AI tools posts forever. Zero monthly cost.\n3. The system reads your own analytics daily and writes better posts tomorrow. It's a loop that compounds.\n4. (Bonus) Token refresh? Also automated. You literally never log in again.\n\nFull setup guide in my bio.",
+      "angle": "listicle_micro",
+      "provider": "deepseek",
+      "timestamp": 1784041673.480336,
+      "local_date": "2026-07-14",
+      "local_hour": 20,
+      "insights": null
     }
   ]
 }
