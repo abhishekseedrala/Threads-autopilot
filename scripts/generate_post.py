@@ -1,9 +1,8 @@
 """
-generate_post.py
+generate_post.py  (v3 - NVIDIA DeepSeek edition)
 Writes one Threads post using free AI APIs.
-Provider chain: Gemini -> Groq -> DeepSeek. First one that works wins.
-Learns from performance.json (epsilon-greedy angle selection) and feeds the
-account's own top-performing posts back into the prompt.
+Provider chain: Gemini -> Groq -> DeepSeek (NVIDIA-hosted). First success wins.
+Learns from performance.json and feeds top posts back into the prompt.
 """
 import json
 import os
@@ -117,7 +116,7 @@ def call_openai_style(prompt, url, key, model):
         "Content-Type": "application/json",
         "Authorization": f"Bearer {key}",
     })
-    with urllib.request.urlopen(req, timeout=60) as r:
+    with urllib.request.urlopen(req, timeout=90) as r:
         data = json.loads(r.read())
     return data["choices"][0]["message"]["content"].strip()
 
@@ -143,7 +142,7 @@ def generate(prompt):
                 DEEPSEEK_KEY, "deepseek-ai/deepseek-v4-flash"), "deepseek"
         except Exception as e:
             errors.append(f"deepseek: {e}")
-    raise RuntimeError("All AI providers failed: " + " | ".join(errors))
+    raise RuntimeError("ALL_PROVIDERS_FAILED (v3): " + " | ".join(errors))
 
 
 def too_similar(text):
