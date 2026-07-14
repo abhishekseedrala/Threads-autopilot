@@ -1,5 +1,5 @@
 {
-  "text": "Right now, this account is pulling today's trending topics, scanning yesterday's analytics to see what tanked, and writing this sentence. It'll auto-schedule via the official Meta API, refresh its own tokens, and never ask me to log in. Oh, and it just decided to tell you that. You're reading a self-improving loop wrapped in free tools. And yes, it knows this post will help it write a better one tomorrow.",
-  "angle": "behind_the_scenes",
+  "text": "I used to spend 20 minutes every morning crafting a Threads post. Some days I\u2019d skip. The algorithm punished me.\n\nThen I spent one afternoon setting up a system that posts for me. Official Meta API. Free tools. It reads its own analytics and writes better the next day.\n\nNow I just check in once a week. This account? It wrote this.",
+  "angle": "mini_story",
   "provider": "deepseek"
 }
