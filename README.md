@@ -15,9 +15,9 @@ When asked for a use case, choose "Access the Threads API".
 Name the app anything (e.g. `threads-autopilot`) and create it.
 In the app dashboard, open the Threads use case → Settings/Customize and make
 sure these permissions are added:
-`threads_basic`
-`threads_content_publish`
-`threads_manage_insights`
+`threads\_basic`
+`threads\_content\_publish`
+`threads\_manage\_insights`
 Under Threads → Roles / Testers (App roles), add your own Threads account
 as a Threads Tester.
 Open the Threads app on your phone → Settings → Account → Website permissions
@@ -30,13 +30,13 @@ account with the three permissions above.
 That token is short-lived (1 hour). Exchange it for a long-lived token
 (~60 days) by opening this URL in your browser (fill in the two values):
 ```
-   https://graph.threads.net/access_token
-     ?grant_type=th_exchange_token
-     &client_secret=YOUR_APP_SECRET
-     &access_token=YOUR_SHORT_LIVED_TOKEN
+   https://graph.threads.net/access\_token
+     ?grant\_type=th\_exchange\_token
+     \&client\_secret=YOUR\_APP\_SECRET
+     \&access\_token=YOUR\_SHORT\_LIVED\_TOKEN
    ```
-(App secret is in App settings → Basic.) Copy the `access_token` from the
-response. This is your `THREADS_ACCESS_TOKEN`.
+(App secret is in App settings → Basic.) Copy the `access\_token` from the
+response. This is your `THREADS\_ACCESS\_TOKEN`.
 Don't worry about the 60-day expiry - the system refreshes it automatically
 every Monday, forever.
 Step 3 - Get your free AI keys (~10 min)
@@ -55,27 +55,27 @@ Create a new GitHub repository (public = unlimited free Actions minutes).
 Upload everything in this folder to it (or `git push`).
 Repo → Settings → Secrets and variables → Actions → add these secrets:
 Secret name	Value
-`THREADS_ACCESS_TOKEN`	long-lived token from Step 2
-`GEMINI_API_KEY`	from Step 3
-`GROQ_API_KEY`	from Step 3 (optional)
-`GH_PAT`	from Step 4
+`THREADS\_ACCESS\_TOKEN`	long-lived token from Step 2
+`GEMINI\_API\_KEY`	from Step 3
+`GROQ\_API\_KEY`	from Step 3 (optional)
+`GH\_PAT`	from Step 4
 Repo → Actions tab → enable workflows if prompted.
 Step 6 - Customize and launch (~30 min)
 Edit `data/products.json`:
-Replace `YOUR_PRODUCT_LINK_HERE` with your real link.
+Replace `YOUR\_PRODUCT\_LINK\_HERE` with your real link.
 Tweak the product name, promise, and key points to your exact offer.
 Adjust the `voice` line - this controls how every post sounds.
 Edit `config.json` if you want:
-`posts_per_day` - start at 15 (see warning below).
-`active_hours_start/end` - local hours when posting is allowed.
+`posts\_per\_day` - start at 15 (see warning below).
+`active\_hours\_start/end` - local hours when posting is allowed.
 Test it: Actions → Post to Threads → Run workflow → force = true.
 Watch the log. Your first AI-written post should appear on Threads in ~30s.
 Done. Close the laptop. It runs forever.
 ---
 Scaling to 50-100 posts/day
 Two edits:
-`config.json` → `"posts_per_day": 100`
-`.github/workflows/post.yml` → change cron to `'*/10 * * * *'`
+`config.json` → `"posts\_per\_day": 100`
+`.github/workflows/post.yml` → change cron to `'\*/10 \* \* \* \*'`
 ⚠️ Strong advice: don't launch at 100/day. Threads' ranking algorithm
 punishes spammy volume and your per-post engagement will collapse, which feeds
 garbage data into the learning loop. Start at 15-20/day, let it learn for 2-3
@@ -83,7 +83,7 @@ weeks, scale gradually. The Threads API hard limit is 250 posts/day.
 How the learning works
 Every post is tagged with its content angle (10 styles: tips, stories,
 bold claims, myth-busting, etc.) and posting hour.
-Daily, `collect_insights.py` pulls views/likes/replies/reposts for every post
+Daily, `collect\_insights.py` pulls views/likes/replies/reposts for every post
 and computes a weighted score (replies and reposts count most).
 The generator uses an epsilon-greedy bandit: 80% of the time it picks from
 the best-performing angles, 20% it experiments.
@@ -95,13 +95,13 @@ Files
 config.json                     posting schedule + bandit settings
 data/products.json              YOUR product info + brand voice (edit this!)
 data/performance.json           the learning brain (auto-updated)
-data/post_history.json          everything ever posted (auto-updated)
-scripts/generate_post.py        AI writer (Gemini → Groq fallback)
-scripts/post_thread.py          publisher + smart schedule gate
-scripts/collect_insights.py     daily learning loop
-scripts/refresh_token.py        weekly token self-renewal
-scripts/weekly_report.py        Sunday reports in /reports
-.github/workflows/*.yml         the four cron jobs
+data/post\_history.json          everything ever posted (auto-updated)
+scripts/generate\_post.py        AI writer (Gemini → Groq fallback)
+scripts/post\_thread.py          publisher + smart schedule gate
+scripts/collect\_insights.py     daily learning loop
+scripts/refresh\_token.py        weekly token self-renewal
+scripts/weekly\_report.py        Sunday reports in /reports
+.github/workflows/\*.yml         the four cron jobs
 ```
 Troubleshooting
 Nothing posts: check Actions logs. Most common: token expired before the
