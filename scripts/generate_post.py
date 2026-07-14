@@ -140,7 +140,7 @@ def generate(prompt):
         try:
             return call_openai_style(
                 prompt, "https://integrate.api.nvidia.com/v1/chat/completions",
-                DEEPSEEK_KEY, "deepseek-ai/deepseek-v3.1"), "deepseek"
+                DEEPSEEK_KEY, "deepseek-ai/deepseek-v4-flash"), "deepseek"
         except Exception as e:
             errors.append(f"deepseek: {e}")
     raise RuntimeError("All AI providers failed: " + " | ".join(errors))
