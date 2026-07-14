@@ -1,0 +1,45 @@
+name: Post to Threads
+on:
+  schedule:
+    # Fires every 30 min. The script itself decides whether to actually post,
+    # based on posts_per_day in config.json. To scale to 50-100 posts/day,
+    # change posts_per_day in config.json AND use: '*/10 * * * *'
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force a post right now (ignore schedule gate)'
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: posting
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate post with AI
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python scripts/generate_post.py
+      - name: Publish to Threads
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          FORCE_POST: ${{ github.event.inputs.force == 'true' && '1' || '0' }}
+        run: python scripts/post_thread.py
+      - name: Commit history
+        run: |
+          git config user.name "threads-autopilot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "post: $(date -u +'%Y-%m-%d %H:%M')"
+          git pull --rebase && git push
