@@ -1,8 +1,9 @@
 """
 generate_post.py
-Writes one Threads post using a free AI API (Gemini primary, Groq fallback).
-Learns from performance.json: picks content angles via epsilon-greedy bandit
-and feeds the account's own top-performing posts back into the prompt.
+Writes one Threads post using free AI APIs.
+Provider chain: Gemini -> Groq -> DeepSeek. First one that works wins.
+Learns from performance.json (epsilon-greedy angle selection) and feeds the
+account's own top-performing posts back into the prompt.
 """
 import json
 import os
@@ -20,6 +21,7 @@ HISTORY = json.loads((ROOT / "data/post_history.json").read_text())
 
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "")
 GROQ_KEY = os.environ.get("GROQ_API_KEY", "")
+DEEPSEEK_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 
 ANGLE_DESCRIPTIONS = {
     "practical_tip": "Share one concrete, actionable tip about automating social media / saving time as a creator. Teach something real in 3-5 lines.",
@@ -36,14 +38,12 @@ ANGLE_DESCRIPTIONS = {
 
 
 def pick_angle():
-    """Epsilon-greedy: mostly exploit best-scoring angles, sometimes explore."""
     angles = CONFIG["angles"]
     scores = PERF.get("angle_scores", {})
     if not scores or random.random() < CONFIG.get("epsilon", 0.2):
         return random.choice(angles)
     scored = [(a, scores.get(a, {}).get("avg_score", 0)) for a in angles]
     scored.sort(key=lambda x: x[1], reverse=True)
-    # weighted pick among top 4 so it doesn't tunnel on one angle
     top = scored[:4]
     weights = [max(s, 0.1) for _, s in top]
     return random.choices([a for a, _ in top], weights=weights, k=1)[0]
@@ -51,7 +51,7 @@ def pick_angle():
 
 def build_prompt(angle):
     p = PRODUCTS["product"]
-    include_cta = random.random() < 0.45  # ~45% of posts carry a CTA; rest are pure value
+    include_cta = random.random() < 0.45
     cta = random.choice(p["cta_phrases"]) if include_cta else None
 
     top_examples = ""
@@ -106,17 +106,16 @@ def call_gemini(prompt):
     return data["candidates"][0]["content"]["parts"][0]["text"].strip()
 
 
-def call_groq(prompt):
-    url = "https://api.groq.com/openai/v1/chat/completions"
+def call_openai_style(prompt, url, key, model):
     body = json.dumps({
-        "model": "llama-3.3-70b-versatile",
+        "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 1.0,
         "max_tokens": 400,
     }).encode()
     req = urllib.request.Request(url, data=body, headers={
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {GROQ_KEY}",
+        "Authorization": f"Bearer {key}",
     })
     with urllib.request.urlopen(req, timeout=60) as r:
         data = json.loads(r.read())
@@ -132,9 +131,18 @@ def generate(prompt):
             errors.append(f"gemini: {e}")
     if GROQ_KEY:
         try:
-            return call_groq(prompt), "groq"
+            return call_openai_style(
+                prompt, "https://api.groq.com/openai/v1/chat/completions",
+                GROQ_KEY, "llama-3.3-70b-versatile"), "groq"
         except Exception as e:
             errors.append(f"groq: {e}")
+    if DEEPSEEK_KEY:
+        try:
+            return call_openai_style(
+                prompt, "https://integrate.api.nvidia.com/v1/chat/completions",
+                DEEPSEEK_KEY, "deepseek-ai/deepseek-v3.1"), "deepseek"
+        except Exception as e:
+            errors.append(f"deepseek: {e}")
     raise RuntimeError("All AI providers failed: " + " | ".join(errors))
 
 
