@@ -89,6 +89,16 @@
       "local_date": "2026-07-15",
       "local_hour": 18,
       "insights": null
+    },
+    {
+      "media_id": "18203511262318989",
+      "text": "This post was written by an automated system. I didn't type a single word. No human touched it.\n\nIt posted itself. Tonight it'll read the analytics and write something better tomorrow.\n\nThat's not a demo. That's how this account runs every single day. One 2-hour setup using free tools and the official Meta API. Then it learns, improves, and never needs me.\n\nThe burnout cycle ends when you build a system that works harder than you do.",
+      "angle": "social_proof_demo",
+      "provider": "deepseek",
+      "timestamp": 1784150918.366767,
+      "local_date": "2026-07-15",
+      "local_hour": 21,
+      "insights": null
     }
   ]
 }
