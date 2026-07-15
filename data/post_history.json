@@ -49,6 +49,16 @@
       "local_date": "2026-07-15",
       "local_hour": 14,
       "insights": null
+    },
+    {
+      "media_id": "18100799477465653",
+      "text": "3 things that make hands-free Threads growth actually work:\n\n1. The official Meta Threads API gives you full posting power \u2014 no shady automation, no account risk.\n2. A one-time 2-hour setup using free tools (GitHub Actions + free AI APIs) runs forever at $0/month.\n3. It reads its own analytics daily and rewrites tomorrow\u2019s posts to be better. That loop is the real lever.\n4. (Bonus) Tokens refresh themselves. You never log in again.\n\nNo daily grind. No expensive SaaS. Just a system...",
+      "angle": "listicle_micro",
+      "provider": "deepseek",
+      "timestamp": 1784119776.498164,
+      "local_date": "2026-07-15",
+      "local_hour": 12,
+      "insights": null
     }
   ]
 }
