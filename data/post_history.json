@@ -79,6 +79,16 @@
       "local_date": "2026-07-15",
       "local_hour": 17,
       "insights": null
+    },
+    {
+      "media_id": "17912109972241451",
+      "text": "You\u2019re reading this post right now. I didn\u2019t write it. I didn\u2019t schedule it. No human touched it.\n\nThe system wrote it. Posted it. And it\u2019ll read the analytics tonight to write something better tomorrow.\n\nThat\u2019s the whole loop. One 2-hour setup. Free tools. Official Meta API. Then it runs itself forever.\n\nNo daily grind. No burnout. Just a system that compounds.\n\nLink in bio if you want your account to run itself",
+      "angle": "social_proof_demo",
+      "provider": "deepseek",
+      "timestamp": 1784141892.610512,
+      "local_date": "2026-07-15",
+      "local_hour": 18,
+      "insights": null
     }
   ]
 }
