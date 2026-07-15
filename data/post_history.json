@@ -99,6 +99,16 @@
       "local_date": "2026-07-15",
       "local_hour": 21,
       "insights": null
+    },
+    {
+      "media_id": "18023289137682195",
+      "text": "Before: 90 minutes a day writing posts nobody saw. Weekends off meant dead accounts. Constant panic over what to say next.\n\nAfter: One Saturday afternoon. 2\u20133 hours of setup with free tools and the official Meta API. Now it writes, posts, reads analytics, and rewrites tomorrow's content. Zero daily work. Zero cost. Zero burnout.\n\nThe system even refreshes its own tokens. You never log in again.\n\nFull setup guide in my bio",
+      "angle": "before_after",
+      "provider": "deepseek",
+      "timestamp": 1784154610.970237,
+      "local_date": "2026-07-15",
+      "local_hour": 22,
+      "insights": null
     }
   ]
 }
