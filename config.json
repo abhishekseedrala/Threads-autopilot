@@ -1,10 +1,19 @@
 {
   "posts_per_day": 15,
-  "timezone": "Asia/Kolkata",
+  "timezone": "America/New_York",
   "active_hours_start": 7,
   "active_hours_end": 23,
   "epsilon": 0.2,
   "no_repeat_similarity": 0.62,
+  "audience_geo": "US",
+  "content_locale": "en-US",
+  "content_guidelines": {
+    "spelling": "American English",
+    "units": "imperial (miles, °F, lbs)",
+    "currency": "USD",
+    "references": "US brands, cities, holidays, pop culture, and stats",
+    "avoid": "region-specific slang or examples from outside the US"
+  },
   "angles": [
     "practical_tip",
     "bold_claim",
