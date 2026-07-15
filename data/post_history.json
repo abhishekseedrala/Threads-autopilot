@@ -69,6 +69,16 @@
       "local_date": "2026-07-15",
       "local_hour": 16,
       "insights": null
+    },
+    {
+      "media_id": "18121315456722147",
+      "text": "How many hours did you spend on Threads last week just deciding what to post?\n\nNow compare that to the time you spent actually building something. The math is brutal.\n\nOne 2-hour setup. Zero daily work after. That\u2019s the whole trade.",
+      "angle": "question_to_audience",
+      "provider": "deepseek",
+      "timestamp": 1784137495.769699,
+      "local_date": "2026-07-15",
+      "local_hour": 17,
+      "insights": null
     }
   ]
 }
