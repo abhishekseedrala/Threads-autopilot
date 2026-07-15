@@ -19,6 +19,16 @@
       "local_date": "2026-07-14",
       "local_hour": 20,
       "insights": null
+    },
+    {
+      "media_id": "18346798693175776",
+      "text": "Most creators waste hours manually posting every day. Instead, build a feedback loop:  \nPost \u2192 Read analytics \u2192 Let AI rewrite tomorrow\u2019s content based on what worked.  \n\nI set this up once with free tools (GitHub Actions + free AI APIs). It now runs itself. No daily grind.  \n\nThat\u2019s the whole trick. One setup, zero upkeep.",
+      "angle": "practical_tip",
+      "provider": "deepseek",
+      "timestamp": 1784095961.524613,
+      "local_date": "2026-07-15",
+      "local_hour": 11,
+      "insights": null
     }
   ]
 }
