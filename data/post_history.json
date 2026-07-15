@@ -39,6 +39,16 @@
       "local_date": "2026-07-15",
       "local_hour": 13,
       "insights": null
+    },
+    {
+      "media_id": "18018141332704802",
+      "text": "Before automation:  \nWaking up and immediately worrying about what to post.  \nSpending 2 hours writing, editing, second-guessing.  \nGoing quiet on weekends because you\u2019re exhausted.  \nInconsistent. Burned out. Stuck.\n\nAfter automation:  \nOne Saturday afternoon. 2\u20133 hours of setup.  \nThen the account runs itself \u2014 posts, reads analytics, improves daily.  \nI wake up to better content than I could write manually.  \nZero daily work. Zero monthly cost. Zero maintenance.\n\nThe switch is...",
+      "angle": "before_after",
+      "provider": "deepseek",
+      "timestamp": 1784107628.980052,
+      "local_date": "2026-07-15",
+      "local_hour": 14,
+      "insights": null
     }
   ]
 }
