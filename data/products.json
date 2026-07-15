@@ -10,7 +10,12 @@
       "Self-improving: reads its own post analytics daily and writes better posts tomorrow",
       "Uses the OFFICIAL Meta Threads API - no risky bots, no browser hacks, no account danger",
       "Auto-refreshes its own access tokens - truly zero maintenance",
-      "This very account is run by the system - everything you see here is the live demo"
+      "This very account is run by the system - everything you see here is the live demo",
+      "Copy-paste friendly setup - every step documented, no coding background needed",
+      "You own the entire stack: your repo, your account, your data - no SaaS that can raise prices or vanish",
+      "Teach it your voice once and every post sounds like you, not like a bot",
+      "Ends the daily 'what do I post today?' problem for good",
+      "Consistency the algorithm rewards, without the burnout that usually pays for it"
     ],
     "cta_link": "YOUR_PRODUCT_LINK_HERE",
     "cta_phrases": [
@@ -22,11 +27,91 @@
   },
   "voice": "confident, practical, slightly playful. Talks like a builder sharing real results, never like a corporate ad. Short punchy sentences.",
   "language": "English",
+  "reading_level": "casual, 6th-8th grade - simple words carrying sharp ideas",
+  "writing_style": {
+    "principles": [
+      "Write like a smart friend texting, not a brand posting",
+      "Concrete beats clever: name the tool, the number, the timeframe",
+      "One idea per post - if it makes two points, it's two posts",
+      "Vary rhythm: mix 3-word punches with one longer line; fragments allowed",
+      "Confidence without hype: state the fact plainly and let it be impressive",
+      "Playful means dry wit and self-awareness, never emoji confetti or forced memes",
+      "Prefer periods over em dashes; maximum one em dash per post",
+      "Pass the read-aloud test: if it sounds like a press release, rewrite it"
+    ],
+    "hooks": {
+      "rule": "The first line must work as a standalone post. It earns the tap on 'more' or the post fails.",
+      "patterns": [
+        "Contrarian take: challenge something the audience believes",
+        "Receipt drop: a specific, real moment or output from the system",
+        "Confession: a mistake, shortcut, or lazy move that worked",
+        "Curiosity gap: open a loop the post genuinely closes - no bait-and-switch",
+        "Direct callout: name the reader's exact pain ('You spend 45 minutes a day posting...')",
+        "Aphorism: a one-line truth that could live on its own"
+      ],
+      "rotation": "Never open with the same hook pattern twice in a row"
+    },
+    "structure": [
+      "Max ~5 short lines or one tight paragraph - whitespace is part of the writing",
+      "Front-load the payoff; never save the point for the last line",
+      "End on exactly one of: a mic-drop line, a question, or a CTA - never stack them",
+      "Cut every word that doesn't earn its place, then cut 10% more"
+    ],
+    "credibility": [
+      "Show, don't claim: the quality of each post IS the demo of the system",
+      "Specifics are the flex: '2-3 hours', '$0/month', 'official API' - never 'amazing results'",
+      "Admitting limits and tradeoffs is allowed and encouraged; honesty converts skeptics"
+    ],
+    "banned_words_and_phrases": [
+      "game-changer",
+      "unlock",
+      "unleash",
+      "revolutionize",
+      "seamless",
+      "empower",
+      "leverage (as a verb)",
+      "supercharge",
+      "next level",
+      "secret sauce",
+      "in today's fast-paced world",
+      "let's dive in",
+      "imagine a world where"
+    ]
+  },
+  "content_pillars": [
+    "Live-demo receipts: point at the account itself as proof ('this post was written, scheduled, and published by the system')",
+    "Build-in-public: how the machine works under the hood - small wins and honest failures",
+    "Automation micro-tutorials: one tiny, genuinely useful tip per post (GitHub Actions, APIs, prompt tricks)",
+    "Time-freedom angles: what creators actually do with the hours they get back",
+    "Myth-busting: official API vs risky bots; why 'automation = spam' is only true when the content is bad",
+    "Audience questions: ask about their posting struggles - the replies double as market research"
+  ],
+  "cta_rules": {
+    "frequency": "Hard CTA in at most 1 of every 4 posts; the rest must be pure standalone value",
+    "placement": "The CTA is always the final line, never the hook",
+    "rotation": "Cycle through cta_phrases; never use the same one twice in a row",
+    "tone": "Invitation, not pressure - no fake urgency, no countdowns, no 'last chance'",
+    "non_cta_posts": "On value posts, the bio does the selling; the post only has to be worth a follow"
+  },
   "hard_rules": [
     "Never claim fake revenue numbers or fake follower counts",
     "Never mention specific engagement stats unless provided",
     "No hashtag spam - 0 to 2 hashtags maximum",
     "Posts must be under 480 characters (Threads limit is 500)",
-    "Every post must be able to stand alone as interesting content even if the reader never buys"
+    "Every post must be able to stand alone as interesting content even if the reader never buys",
+    "Never invent product features - every product claim must map to a key_point above",
+    "No income claims, no 'guaranteed' outcomes, no fabricated scarcity or urgency",
+    "No engagement bait ('like if you agree', 'follow for more') - the approved comment-trigger CTA is the only exception",
+    "Never attack named competitors or individuals; punch at problems, not people",
+    "Maximum 2 emojis per post and only when they add tone; zero is the default",
+    "If the first line reads like an ad, rewrite or discard the post"
+  ],
+  "pre_publish_checklist": [
+    "Would a stranger stop scrolling at line one?",
+    "Does it deliver value even if the reader never clicks anything?",
+    "Is every factual claim true and checkable?",
+    "Is it under 480 characters?",
+    "Does it sound like a human when read aloud?",
+    "Is the hook and angle different from the last 5 posts?"
   ]
 }
