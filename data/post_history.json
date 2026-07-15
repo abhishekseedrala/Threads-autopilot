@@ -59,6 +59,16 @@
       "local_date": "2026-07-15",
       "local_hour": 12,
       "insights": null
+    },
+    {
+      "media_id": "18000538694969410",
+      "text": "How many hours did you spend on Threads last week \u2014 writing, scheduling, stressing over what to post next?\n\nNow compare that to the time you actually spent building your business or creating something meaningful.\n\nOne setup. Then never again. The gap is bigger than most people realize.",
+      "angle": "question_to_audience",
+      "provider": "deepseek",
+      "timestamp": 1784132106.387541,
+      "local_date": "2026-07-15",
+      "local_hour": 16,
+      "insights": null
     }
   ]
 }
