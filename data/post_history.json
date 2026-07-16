@@ -149,6 +149,16 @@
       "local_date": "2026-07-16",
       "local_hour": 12,
       "insights": null
+    },
+    {
+      "media_id": "17936293467290713",
+      "text": "I used to open Threads five times a day. Write. Delete. Rewrite. Post. Check an hour later. Nothing.\n\nThen one Saturday afternoon I sat down and built a system that does it for me. Two hours of setup. Free tools. Official Meta API.\n\nNow I wake up to posts I never wrote. The system reads yesterday's analytics and writes better ones today. My account gets smarter while I sleep.\n\nI haven't opened this app in weeks. It runs itself.",
+      "angle": "mini_story",
+      "provider": "deepseek",
+      "timestamp": 1784214305.49799,
+      "local_date": "2026-07-16",
+      "local_hour": 15,
+      "insights": null
     }
   ]
 }
