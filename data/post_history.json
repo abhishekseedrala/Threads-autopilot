@@ -189,6 +189,16 @@
       "local_date": "2026-07-16",
       "local_hour": 19,
       "insights": null
+    },
+    {
+      "media_id": "18108935060086156",
+      "text": "Stop treating Threads like a daily chore. The real time sink isn\u2019t typing \u2014 it\u2019s deciding what to type. Build a feedback loop: your past analytics drive tomorrow\u2019s posts. One afternoon of setup using free tools and the official API. Then it writes itself. No blank page. No decision fatigue. Consistency without the daily grind.",
+      "angle": "practical_tip",
+      "provider": "deepseek",
+      "timestamp": 1784233544.357004,
+      "local_date": "2026-07-16",
+      "local_hour": 20,
+      "insights": null
     }
   ]
 }
