@@ -139,6 +139,16 @@
       "local_date": "2026-07-16",
       "local_hour": 11,
       "insights": null
+    },
+    {
+      "media_id": "18097325285597379",
+      "text": "The \"post every day or die\" advice is keeping you small. Consistency matters \u2014 but showing up to manually type posts every single morning is not a strategy. It's a tax on your time. The real win? Build a system that posts for you, learns from itself, and never burns out. That's what runs this account. One 2-hour setup. Free tools. Official Meta API. Then it compounds on its own while you build something real.\n\nComment 'AUTO' and I'll send you the details",
+      "angle": "contrarian_take",
+      "provider": "deepseek",
+      "timestamp": 1784206791.949963,
+      "local_date": "2026-07-16",
+      "local_hour": 12,
+      "insights": null
     }
   ]
 }
