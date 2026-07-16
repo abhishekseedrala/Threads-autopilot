@@ -169,6 +169,16 @@
       "local_date": "2026-07-16",
       "local_hour": 16,
       "insights": null
+    },
+    {
+      "media_id": "18203233507362984",
+      "text": "Most 'automation' tools are just scheduling. They repeat. They don't learn.\n\nThe system running this account reads its own analytics every night and writes better posts tomorrow. It improves without me touching it. That's the difference between burnout and compounding.\n\nOne 2-hour setup using free tools and the official Meta API. Then it runs itself.\n\nLink in bio if you want your account to run itself",
+      "angle": "bold_claim",
+      "provider": "deepseek",
+      "timestamp": 1784224767.067721,
+      "local_date": "2026-07-16",
+      "local_hour": 17,
+      "insights": null
     }
   ]
 }
