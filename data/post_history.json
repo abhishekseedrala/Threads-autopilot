@@ -129,6 +129,16 @@
       "local_date": "2026-07-16",
       "local_hour": 9,
       "insights": null
+    },
+    {
+      "media_id": "17895987681549887",
+      "text": "I haven't touched this account in 3 months. It still posts every day. Gets better every week.\n\nThe secret isn't willpower. It's one afternoon of setup using free tools and the official Meta API. The system writes, posts, reads analytics, and rewrites tomorrow's posts \u2014 all on its own. Even refreshes its own tokens.\n\nConsistency without the burnout. That's the whole game.",
+      "angle": "bold_claim",
+      "provider": "deepseek",
+      "timestamp": 1784201279.111005,
+      "local_date": "2026-07-16",
+      "local_hour": 11,
+      "insights": null
     }
   ]
 }
