@@ -109,6 +109,16 @@
       "local_date": "2026-07-15",
       "local_hour": 22,
       "insights": null
+    },
+    {
+      "media_id": "17864412741649690",
+      "text": "Automation gets you banned\" is the most repeated myth in Threads growth.\n\nHere's the reality: the official Meta Threads API exists for exactly this. It's the same permission system brands like Nike and Netflix use. No browser hacks. No fake bot behavior. Just proper API calls that Meta explicitly supports.\n\nThe system running this account uses that API. It posts, reads analytics, and improves \u2014 all within Meta's rules. Tokens even refresh themselves.\n\nMyth busted. Now you can build...",
+      "angle": "myth_buster",
+      "provider": "deepseek",
+      "timestamp": 1784186296.357094,
+      "local_date": "2026-07-16",
+      "local_hour": 7,
+      "insights": null
     }
   ]
 }
