@@ -179,6 +179,16 @@
       "local_date": "2026-07-16",
       "local_hour": 17,
       "insights": null
+    },
+    {
+      "media_id": "17888368719605375",
+      "text": "Automation gets you banned\" \u2014 unless you're using the official API Meta built for exactly this.\n\nThis account? 100% automated. Posts daily. Reads its own analytics. Rewrites tomorrow's content better. It runs on free tools and Meta's own API. No browser hacks, no risky bots. Tokens refresh themselves.\n\nYou don't need willpower. You need a one-time setup.\n\nComment 'AUTO' and I'll send you the details",
+      "angle": "myth_buster",
+      "provider": "deepseek",
+      "timestamp": 1784229313.218392,
+      "local_date": "2026-07-16",
+      "local_hour": 19,
+      "insights": null
     }
   ]
 }
