@@ -199,6 +199,16 @@
       "local_date": "2026-07-16",
       "local_hour": 20,
       "insights": null
+    },
+    {
+      "media_id": "17963568516132485",
+      "text": "I used to stare at a blank Threads box every morning. Write. Delete. Write again. Post it, hate it, repeat tomorrow.\n\nOne Saturday I said enough. Sat down, followed a step-by-step guide, and built a system using free tools and Meta\u2019s official API. Two hours of setup.\n\nNow my account posts every day without me. It reads yesterday\u2019s analytics and writes better tomorrow. Gets smarter while I sleep. I haven\u2019t touched the app in weeks.\n\nThat\u2019s the real consistency.",
+      "angle": "mini_story",
+      "provider": "deepseek",
+      "timestamp": 1784237448.961596,
+      "local_date": "2026-07-16",
+      "local_hour": 21,
+      "insights": null
     }
   ]
 }
