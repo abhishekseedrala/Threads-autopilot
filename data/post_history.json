@@ -159,6 +159,16 @@
       "local_date": "2026-07-16",
       "local_hour": 15,
       "insights": null
+    },
+    {
+      "media_id": "18122615332813028",
+      "text": "How many hours this week did you spend typing posts that got 12 likes?\n\nThat\u2019s time you\u2019ll never get back. I know the feeling \u2014 I used to lose 90 minutes a day to the same loop. Then I built a system that does it all for me. Writes. Posts. Learns. Improves. One setup, free tools, official Meta API. Zero daily work.\n\nComment 'AUTO' and I'll send you the details",
+      "angle": "question_to_audience",
+      "provider": "deepseek",
+      "timestamp": 1784220479.158399,
+      "local_date": "2026-07-16",
+      "local_hour": 16,
+      "insights": null
     }
   ]
 }
