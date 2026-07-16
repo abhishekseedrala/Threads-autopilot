@@ -119,6 +119,16 @@
       "local_date": "2026-07-16",
       "local_hour": 7,
       "insights": null
+    },
+    {
+      "media_id": "18445433815186865",
+      "text": "4 things nobody tells you about hands-free Threads growth:\n\n1. The official Meta API is the difference between \u201cautomation that works\u201d and \u201cautomation that gets banned.\u201d\n2. Free tools (GitHub Actions + free AI APIs) run everything \u2014 no SaaS bill, no subscription creep.\n3. The real magic isn\u2019t posting. It\u2019s the daily analytics loop: read what worked, write better tomorrow.\n4. Tokens auto-refresh. You set it up once and genuinely never log in again.",
+      "angle": "listicle_micro",
+      "provider": "deepseek",
+      "timestamp": 1784194458.200064,
+      "local_date": "2026-07-16",
+      "local_hour": 9,
+      "insights": null
     }
   ]
 }
