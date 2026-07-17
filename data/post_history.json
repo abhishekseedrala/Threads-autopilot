@@ -356,6 +356,16 @@
       "local_date": "2026-07-17",
       "local_hour": 17,
       "insights": null
+    },
+    {
+      "media_id": "18000397112964793",
+      "text": "The hardest part of growing on Threads isn\u2019t writing good posts.  \nIt\u2019s writing them every single day without burning out.\n\nI solved that by building a loop: post \u2192 analytics \u2192 better post tomorrow.  \nOne 2-hour setup with free tools and Meta\u2019s official API.  \nNow it runs itself. Writes. Learns. Improves. I just watch.",
+      "angle": "bold_claim",
+      "provider": "deepseek",
+      "timestamp": 1784318396.882991,
+      "local_date": "2026-07-17",
+      "local_hour": 19,
+      "insights": null
     }
   ]
 }
