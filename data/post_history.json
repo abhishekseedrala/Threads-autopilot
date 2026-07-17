@@ -366,6 +366,16 @@
       "local_date": "2026-07-17",
       "local_hour": 19,
       "insights": null
+    },
+    {
+      "media_id": "18447440257143560",
+      "text": "4 lessons from running a Threads account that writes itself:\n\n1. The official Meta API is free \u2014 no browser hacks, zero ban risk.\n2. GitHub Actions + free AI APIs = $0/month forever.\n3. A daily feedback loop (post \u2192 analytics \u2192 better post) compounds faster than any strategy.\n4. Tokens auto-refresh. I haven\u2019t logged in since setup day.\n\nTwo hours one Saturday. That\u2019s the entire investment.",
+      "angle": "listicle_micro",
+      "provider": "deepseek",
+      "timestamp": 1784328588.607052,
+      "local_date": "2026-07-17",
+      "local_hour": 22,
+      "insights": null
     }
   ]
 }
