@@ -286,6 +286,16 @@
       "local_date": "2026-07-16",
       "local_hour": 21,
       "insights": null
+    },
+    {
+      "media_id": "18129488740624810",
+      "text": "Stop manually scheduling posts. Instead, create a content loop: let your performance data dictate tomorrow's topic. I automated this with free tools and the official API. Now my account writes its own posts based on what actually works. No guesswork, no burnout.",
+      "angle": "practical_tip",
+      "provider": "deepseek",
+      "timestamp": 1784272489.377822,
+      "local_date": "2026-07-17",
+      "local_hour": 7,
+      "insights": null
     }
   ]
 }
