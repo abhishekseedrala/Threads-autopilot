@@ -346,6 +346,16 @@
       "local_date": "2026-07-17",
       "local_hour": 15,
       "insights": null
+    },
+    {
+      "media_id": "18110314390955651",
+      "text": "The best post scheduler isn\u2019t a calendar \u2014 it\u2019s yesterday\u2019s analytics.  \n\nFeed your performance data into a simple system that drafts tomorrow\u2019s content based on what actually resonated. No guessing, no blank page.  \n\nI did this once with free tools + the official Threads API. Now it writes, posts, and improves itself daily. 2-3 hours of setup, then zero upkeep.  \n\nFull setup guide in my bio",
+      "angle": "practical_tip",
+      "provider": "deepseek",
+      "timestamp": 1784307782.085727,
+      "local_date": "2026-07-17",
+      "local_hour": 17,
+      "insights": null
     }
   ]
 }
