@@ -306,6 +306,16 @@
       "local_date": "2026-07-17",
       "local_hour": 9,
       "insights": null
+    },
+    {
+      "media_id": "18135520897511141",
+      "text": "You don\u2019t need to generate ideas. You need to let your past posts tell you what to write next.\n\nHere\u2019s the one trick that ended my daily content anxiety: every night, your analytics reveal exactly which topics, hooks, and lengths worked. Feed that data into a simple system that drafts tomorrow\u2019s posts based on what got traction today.\n\nNo staring at blank screens. No guessing. Just a loop that compounds.\n\nI built this once with free tools and the official API. Now my account writes...",
+      "angle": "practical_tip",
+      "provider": "deepseek",
+      "timestamp": 1784286282.338035,
+      "local_date": "2026-07-17",
+      "local_hour": 11,
+      "insights": null
     }
   ]
 }
