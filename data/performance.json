@@ -1,16 +1,16 @@
 {
   "angle_scores": {
     "bold_claim": {
-      "avg_score": 0.013,
-      "n": 1
+      "avg_score": 0.007,
+      "n": 3
     },
     "listicle_micro": {
-      "avg_score": 0.005,
-      "n": 2
+      "avg_score": 0.007,
+      "n": 3
     },
     "practical_tip": {
-      "avg_score": 0.01,
-      "n": 1
+      "avg_score": 0.006,
+      "n": 2
     },
     "before_after": {
       "avg_score": 0.002,
@@ -18,25 +18,40 @@
     },
     "question_to_audience": {
       "avg_score": 0.002,
-      "n": 2
+      "n": 3
     },
     "social_proof_demo": {
       "avg_score": 0.001,
       "n": 2
+    },
+    "myth_buster": {
+      "avg_score": 0.005,
+      "n": 2
+    },
+    "contrarian_take": {
+      "avg_score": 0.002,
+      "n": 1
+    },
+    "mini_story": {
+      "avg_score": 0.002,
+      "n": 2
     }
   },
   "hour_scores": {
-    "15": 0.013,
-    "20": 0.004,
-    "11": 0.01,
+    "15": 0.007,
+    "20": 0.003,
+    "11": 0.009,
     "13": 0.004,
     "14": 0.003,
-    "12": 0.005,
+    "12": 0.004,
     "16": 0.001,
     "17": 0.003,
     "18": 0.001,
-    "21": 0.001,
-    "22": 0.0
+    "21": 0.002,
+    "22": 0.0,
+    "7": 0.01,
+    "9": 0.011,
+    "19": 0.0
   },
   "top_posts": [
     {
@@ -46,24 +61,24 @@
     },
     {
       "text": "Most creators waste hours manually posting every day. Instead, build a feedback loop:  \nPost \u2192 Read analytics \u2192 Let AI rewrite tomorrow\u2019s content based on what worked.  \n\nI set this up once with free tools (GitHub Actions + free AI APIs). It now runs itself. No daily grind.  \n\nThat\u2019s the whole trick. One setup, zero upkeep.",
-      "score": 0.01,
+      "score": 0.011,
       "angle": "practical_tip"
     },
     {
-      "text": "3 things that make hands-free Threads growth actually work:\n\n1. The official Meta Threads API gives you full posting power \u2014 no shady automation, no account risk.\n2. A one-time 2-hour setup using free tools (GitHub Actions + free AI APIs) runs forever at $0/month.\n3. It reads its own analytics daily and rewrites tomorrow\u2019s posts to be better. That loop is the real lever.\n4. (Bonus) Tokens refresh themselves. You never log in again.\n\nNo daily grind. No expensive SaaS. Just a system...",
-      "score": 0.005,
+      "text": "4 things nobody tells you about hands-free Threads growth:\n\n1. The official Meta API is the difference between \u201cautomation that works\u201d and \u201cautomation that gets banned.\u201d\n2. Free tools (GitHub Actions + free AI APIs) run everything \u2014 no SaaS bill, no subscription creep.\n3. The real magic isn\u2019t posting. It\u2019s the daily analytics loop: read what worked, write better tomorrow.\n4. Tokens auto-refresh. You set it up once and genuinely never log in again.",
+      "score": 0.011,
       "angle": "listicle_micro"
     },
     {
-      "text": "3 things nobody tells you about hands-off Threads growth:\n\n1. The official Threads API exists and is free \u2014 no shady bots, no browser hacks.\n2. A single 2-hour setup with GitHub Actions + free AI tools posts forever. Zero monthly cost.\n3. The system reads your own analytics daily and writes better posts tomorrow. It's a loop that compounds.\n4. (Bonus) Token refresh? Also automated. You literally never log in again.\n\nFull setup guide in my bio.",
-      "score": 0.004,
-      "angle": "listicle_micro"
+      "text": "Automation gets you banned\" is the most repeated myth in Threads growth.\n\nHere's the reality: the official Meta Threads API exists for exactly this. It's the same permission system brands like Nike and Netflix use. No browser hacks. No fake bot behavior. Just proper API calls that Meta explicitly supports.\n\nThe system running this account uses that API. It posts, reads analytics, and improves \u2014 all within Meta's rules. Tokens even refresh themselves.\n\nMyth busted. Now you can build...",
+      "score": 0.01,
+      "angle": "myth_buster"
     },
     {
-      "text": "Waking up to 7 draft posts written from yesterday\u2019s best performers.  \nNo alarm for \u201ccontent time.\u201d No panic about what to say.  \n\nBefore: 2 hours a day guessing, burning out, going silent on weekends.  \nAfter: 2 hours one Saturday, then it runs itself. Writes, posts, studies analytics, gets smarter.  \n\nSame account. Same audience. One decision changed everything.",
-      "score": 0.004,
-      "angle": "before_after"
+      "text": "I haven't touched this account in 3 months. It still posts every day. Gets better every week.\n\nThe secret isn't willpower. It's one afternoon of setup using free tools and the official Meta API. The system writes, posts, reads analytics, and rewrites tomorrow's posts \u2014 all on its own. Even refreshes its own tokens.\n\nConsistency without the burnout. That's the whole game.",
+      "score": 0.006,
+      "angle": "bold_claim"
     }
   ],
-  "last_updated": "2026-07-16T23:27:04.434798+00:00"
+  "last_updated": "2026-07-17T23:27:03.946887+00:00"
 }
