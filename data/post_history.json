@@ -326,6 +326,16 @@
       "local_date": "2026-07-17",
       "local_hour": 12,
       "insights": null
+    },
+    {
+      "media_id": "18563659975066116",
+      "text": "The most dangerous automation isn't the one that replaces your work. It's the one that gets better at it every single day.\n\nThis account reads its own analytics nightly and writes smarter posts tomorrow. Free tools. Official Meta API. One 2-hour setup. Then it runs itself.\n\nA feedback loop that compounds. Not a schedule that repeats.\n\nComment 'AUTO' and I'll send you the details",
+      "angle": "bold_claim",
+      "provider": "deepseek",
+      "timestamp": 1784298398.15958,
+      "local_date": "2026-07-17",
+      "local_hour": 14,
+      "insights": null
     }
   ]
 }
