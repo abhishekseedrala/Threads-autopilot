@@ -316,6 +316,16 @@
       "local_date": "2026-07-17",
       "local_hour": 11,
       "insights": null
+    },
+    {
+      "media_id": "18402967006081478",
+      "text": "I spent 2 hours one Saturday.  \nNow this account posts itself.  \nReads its own analytics every night.  \nWrites better posts tomorrow.  \n\nFree tools. Official Meta API. Zero monthly cost.  \nTokens refresh automatically. I never log in.  \n\nConsistency without the grind.  \nFull setup guide in my bio.",
+      "angle": "bold_claim",
+      "provider": "deepseek",
+      "timestamp": 1784292045.24427,
+      "local_date": "2026-07-17",
+      "local_hour": 12,
+      "insights": null
     }
   ]
 }
