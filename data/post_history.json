@@ -506,6 +506,16 @@
       "local_date": "2026-07-18",
       "local_hour": 20,
       "insights": null
+    },
+    {
+      "media_id": "18118534858871989",
+      "text": "The \"post every single day\" advice is secretly burnout in disguise. Real growth comes from systems that learn and improve without you. I built one that writes, posts, and gets better every day \u2014 using free tools and the official API. One setup. Zero daily grind. Consistency without the cost. Comment 'AUTO' and I'll send you the details",
+      "angle": "contrarian_take",
+      "provider": "deepseek",
+      "timestamp": 1784414522.970305,
+      "local_date": "2026-07-18",
+      "local_hour": 22,
+      "insights": null
     }
   ]
 }
