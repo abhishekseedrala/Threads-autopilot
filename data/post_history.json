@@ -446,6 +446,16 @@
       "local_date": "2026-07-17",
       "local_hour": 22,
       "insights": null
+    },
+    {
+      "media_id": "18095949893211972",
+      "text": "Automation gets you banned\" is only true if you're breaking the rules.\n\nThe official Meta Threads API exists for automation. It's the same permission system brands use. No hacks. No browser tricks. Just clean API calls Meta explicitly supports.\n\nThis account runs on that API. Posts daily. Reads its own analytics. Writes better tomorrow. All on free tools. One 2-hour setup. Tokens refresh themselves.\n\nThe ban myth keeps people grinding manually. The truth lets you build a system...",
+      "angle": "myth_buster",
+      "provider": "deepseek",
+      "timestamp": 1784364272.565576,
+      "local_date": "2026-07-18",
+      "local_hour": 8,
+      "insights": null
     }
   ]
 }
