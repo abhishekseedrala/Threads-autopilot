@@ -466,6 +466,16 @@
       "local_date": "2026-07-18",
       "local_hour": 10,
       "insights": null
+    },
+    {
+      "media_id": "18054419069780925",
+      "text": "What if your Threads account could outgrow you?\n\nThis one reads its own analytics every night and writes better posts the next day. No daily grind, no guessing. One 2-hour setup with free tools and the official Meta API. Then it runs itself. Tokens auto-refresh. I just watch it compound.\n\nLink in bio if you want your account to run itself",
+      "angle": "bold_claim",
+      "provider": "deepseek",
+      "timestamp": 1784374099.586414,
+      "local_date": "2026-07-18",
+      "local_hour": 11,
+      "insights": null
     }
   ]
 }
