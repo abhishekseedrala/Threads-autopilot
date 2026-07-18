@@ -486,6 +486,16 @@
       "local_date": "2026-07-18",
       "local_hour": 13,
       "insights": null
+    },
+    {
+      "media_id": "17914906992423570",
+      "text": "4 things I\u2019ve learned running a Threads account that never asks me for content ideas:\n\n1. You don\u2019t need to post daily \u2014 you need a system that learns what works and writes better tomorrow.\n2. The official Meta API + free tools = automation without ban risk or a single SaaS bill.\n3. A 2-3 hour setup is all it takes to never open the app again. Tokens refresh themselves.\n4. The system improves on its own. Reads analytics. Rewrites. Compounds. You just watch.\n\nLink in bio if you want...",
+      "angle": "listicle_micro",
+      "provider": "deepseek",
+      "timestamp": 1784396962.096436,
+      "local_date": "2026-07-18",
+      "local_hour": 17,
+      "insights": null
     }
   ]
 }
