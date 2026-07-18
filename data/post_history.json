@@ -496,6 +496,16 @@
       "local_date": "2026-07-18",
       "local_hour": 17,
       "insights": null
+    },
+    {
+      "media_id": "18127885672631345",
+      "text": "The secret to hands-free growth isn\u2019t scheduling. It\u2019s closing the loop.\n\nYour posts generate data. That data should generate your next posts. One 2-hour setup with free tools and the official API. No daily decisions. The system learns and improves on its own.",
+      "angle": "practical_tip",
+      "provider": "deepseek",
+      "timestamp": 1784404824.524341,
+      "local_date": "2026-07-18",
+      "local_hour": 20,
+      "insights": null
     }
   ]
 }
