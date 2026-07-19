@@ -589,6 +589,16 @@
       "local_date": "2026-07-19",
       "local_hour": 19,
       "insights": null
+    },
+    {
+      "media_id": "18128034358654835",
+      "text": "3 reasons my Threads account writes better posts than I ever did:\n\n1. It reads yesterday\u2019s analytics every morning and rewrites today\u2019s content based on what actually hit.\n2. Official Meta API + GitHub Actions + free AI = $0/month, zero ban risk, zero maintenance.\n3. Tokens refresh themselves. I haven\u2019t touched the setup since that one Saturday afternoon.\n\nThe system compounds. I just watch.",
+      "angle": "listicle_micro",
+      "provider": "deepseek",
+      "timestamp": 1784498351.718016,
+      "local_date": "2026-07-19",
+      "local_hour": 21,
+      "insights": null
     }
   ]
 }
