@@ -1,19 +1,10 @@
 {
-  "posts_per_day": 15,
-  "timezone": "America/New_York",
-  "active_hours_start": 7,
-  "active_hours_end": 23,
+  "timezone": "UTC",
+  "posts_per_day": 6,
+  "active_hours_start": 13,
+  "active_hours_end": 5,
   "epsilon": 0.2,
   "no_repeat_similarity": 0.62,
-  "audience_geo": "US",
-  "content_locale": "en-US",
-  "content_guidelines": {
-    "spelling": "American English",
-    "units": "imperial (miles, °F, lbs)",
-    "currency": "USD",
-    "references": "US brands, cities, holidays, pop culture, and stats",
-    "avoid": "region-specific slang or examples from outside the US"
-  },
   "angles": [
     "practical_tip",
     "bold_claim",
@@ -24,6 +15,15 @@
     "before_after",
     "listicle_micro",
     "contrarian_take",
-    "social_proof_demo"
-  ]
+    "social_proof_demo",
+    "tool_listicle",
+    "income_proof"
+  ],
+  "_notes": {
+    "timezone": "UTC. All gating is done in UTC so US and UK are handled by one wraparound window instead of a single local clock. post_thread.py is DST-aware via zoneinfo, so if you later switch to a named tz (e.g. America/New_York) the offset tracks daylight saving automatically.",
+    "active_hours": "13:00-05:00 UTC (crosses midnight). Covers UK afternoon/evening (13-22 UTC) through US Eastern + Pacific prime (23-05 UTC). This is a wide dual-region band, NOT tuned to data yet. After ~2 weeks, read hour_scores in performance.json and narrow to your real best UTC hours.",
+    "posts_per_day": "6, up from 4, because the window is ~16h wide and spans two regions - you need more posts so something lands in each region's prime slot. Still conservative; ramp up only if engagement holds and you see no spam friction.",
+    "income_proof": "Present in the list but AUTO-DISABLED at runtime unless products.json.product.real_metrics is set with REAL figures. Never add fake numbers to enable it.",
+    "cta_guidance": "Analyzed accounts kept raw product links out of the post body; CTAs were bio-based or pointed to a free resource. The 0.45 include_cta rate is reasonable; consider lowering it."
+  }
 }
