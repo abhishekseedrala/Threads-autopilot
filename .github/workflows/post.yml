@@ -1,47 +1,60 @@
-name: Post to Threads
+name: autopost
+
+# Fires hourly. post_thread.py self-gates on active hours, daily quota and
+# spacing, so most ticks generate a post but publish nothing. That is intended.
+
 on:
   schedule:
-    # Fires every 30 min. The script itself decides whether to actually post,
-    # based on posts_per_day in config.json. To scale to 50-100 posts/day,
-    # change posts_per_day in config.json AND use: '*/10 * * * *'
-    - cron: '*/30 * * * *'
+    - cron: '5 * * * *'      # every hour at :05
   workflow_dispatch:
     inputs:
       force:
-        description: 'Force a post right now (ignore schedule gate)'
-        default: 'false'
+        description: 'Force a post, bypassing the schedule gate'
+        type: boolean
+        default: false
+
+concurrency:
+  group: threads-data          # shared with insights.yml so they never race on the JSON files
+  cancel-in-progress: false
 
 permissions:
   contents: write
 
-concurrency:
-  group: posting
-  cancel-in-progress: false
-
 jobs:
-  post:
+  run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Generate post with AI
+
+      - name: Ensure tzdata (DST-correct timezones)
+        run: pip install tzdata
+
+      - name: Generate post
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_API_KEY:   ${{ secrets.GROQ_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          
         run: python scripts/generate_post.py
-      - name: Publish to Threads
+
+      - name: Publish (self-gated)
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-          FORCE_POST: ${{ github.event.inputs.force == 'true' && '1' || '0' }}
+          FORCE_POST: ${{ inputs.force == true && '1' || '' }}
         run: python scripts/post_thread.py
-      - name: Commit history
+
+      - name: Commit data changes
         run: |
-          git config user.name "threads-autopilot"
-          git config user.email "bot@users.noreply.github.com"
+          git config user.name  "autopost-bot"
+          git config user.email "actions@github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "post: $(date -u +'%Y-%m-%d %H:%M')"
-          git pull --rebase && git push
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "autopost: publish + history [skip ci]"
+          # pull-rebase before push so parallel workflows don't reject each other
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && break
+            echo "push attempt $i failed, retrying..."; sleep 5
+          done
