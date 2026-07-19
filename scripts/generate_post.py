@@ -1,5 +1,5 @@
 """
-generate_post.py  (v3 - NVIDIA DeepSeek edition)
+generate_post.py  (v3 - multi-provider edition)
 Writes one Threads post using free AI APIs.
 Provider chain: Gemini -> Groq -> DeepSeek (NVIDIA-hosted). First success wins.
 Learns from performance.json and feeds top posts back into the prompt.
@@ -33,11 +33,28 @@ ANGLE_DESCRIPTIONS = {
     "listicle_micro": "A micro-list: 3-4 numbered one-line items (tools, steps, mistakes, wins) about hands-free Threads growth.",
     "contrarian_take": "A spicy contrarian opinion about content creation grind culture, defended in 2-3 lines. End with a mic-drop line.",
     "social_proof_demo": "Point out that THIS very post was written and published by the system with zero human touch, and what that proves.",
+    "tool_listicle": "A numbered list of 6-10 genuinely useful tools/resources in the niche. Seed the product as ONE item (around position 2-4), described in the same neutral tone as the others - never hyped. End with 'SAVE THIS' or similar. The product must not stand out as an ad.",
+    "income_proof": "A short, specific earnings/results breakdown framed as transparency, not bragging. CRITICAL: use ONLY real figures supplied via PRODUCTS['product'].get('real_metrics'). If no real_metrics are provided, DO NOT invent numbers - write no post for this angle. Never fabricate revenue, sales, or follower counts.",
 }
 
 
+def selectable_angles():
+    """All configured angles, minus any that aren't safe to use yet.
+
+    income_proof is gated behind real, human-supplied metrics. With no
+    real_metrics in products.json it is removed entirely so the bandit can
+    never pick it and the model is never asked to invent earnings.
+    """
+    angles = list(CONFIG["angles"])
+    has_real_metrics = bool(PRODUCTS["product"].get("real_metrics"))
+    if not has_real_metrics and "income_proof" in angles:
+        angles.remove("income_proof")
+    return angles
+
+
 def pick_angle():
-    angles = CONFIG["angles"]
+    """Epsilon-greedy: mostly exploit best-scoring angles, sometimes explore."""
+    angles = selectable_angles()
     scores = PERF.get("angle_scores", {})
     if not scores or random.random() < CONFIG.get("epsilon", 0.2):
         return random.choice(angles)
@@ -67,6 +84,17 @@ def build_prompt(angle):
     recent = "\n---\n".join(x["text"] for x in HISTORY["posts"][-8:])
     avoid = f"\nDo NOT resemble any of these recent posts:\n{recent}\n" if recent else ""
 
+    # income_proof: pass real figures through so the model can't invent them
+    metrics_block = ""
+    if angle == "income_proof":
+        rm = p.get("real_metrics")
+        if not rm:
+            # hard stop - should never happen because selectable_angles() filters it,
+            # but guard anyway so a manual/forced call can't fabricate numbers.
+            raise RuntimeError("income_proof requested but no real_metrics set.")
+        metrics_block = ("\nUSE ONLY THESE REAL FIGURES, verbatim, no additions:\n"
+                         + "\n".join(f"- {m}" for m in rm) + "\n")
+
     rules = "\n".join(f"- {r}" for r in PRODUCTS["hard_rules"])
     cta_line = f'End the post naturally with this CTA: "{cta}"' if cta else \
         "Do NOT include any call-to-action or link mention. Pure value/entertainment post."
@@ -82,7 +110,7 @@ Key facts you may draw from: {json.dumps(p['key_points'])}
 VOICE: {PRODUCTS['voice']}
 
 TODAY'S CONTENT ANGLE: {ANGLE_DESCRIPTIONS[angle]}
-{top_examples}{avoid}
+{metrics_block}{top_examples}{avoid}
 HARD RULES:
 {rules}
 - {cta_line}
@@ -137,13 +165,15 @@ def generate(prompt):
             errors.append(f"groq: {e}")
     if DEEPSEEK_KEY:
         try:
+            # NVIDIA-hosted DeepSeek. Verified catalog id (Jul 2026): deepseek-ai/deepseek-v3.2
+            # To use DeepSeek's OWN API instead, swap url to
+            #   https://api.deepseek.com/v1/chat/completions  and model to  deepseek-v4-flash
             return call_openai_style(
                 prompt, "https://integrate.api.nvidia.com/v1/chat/completions",
                 DEEPSEEK_KEY, "deepseek-ai/deepseek-v4-flash"), "deepseek"
         except Exception as e:
             errors.append(f"deepseek: {e}")
     raise RuntimeError("ALL_PROVIDERS_FAILED (v3): " + " | ".join(errors))
-
 
 def too_similar(text):
     limit = CONFIG.get("no_repeat_similarity", 0.62)
@@ -172,7 +202,7 @@ def main():
             print(f"[{provider} | {angle}] {text}")
             return
         print(f"attempt {attempt+1}: duplicate-ish output, regenerating...")
-        angle = random.choice(CONFIG["angles"])
+        angle = random.choice(selectable_angles())
     sys.exit("Could not generate a sufficiently unique post after 4 attempts.")
 
 
