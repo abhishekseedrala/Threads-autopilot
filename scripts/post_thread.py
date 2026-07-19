@@ -22,10 +22,16 @@ HISTORY = json.loads((ROOT / "data/post_history.json").read_text())
 TOKEN = os.environ["THREADS_ACCESS_TOKEN"]
 API = "https://graph.threads.net/v1.0"
 
-# --- timezone helper (no external deps) ---
-TZ_OFFSETS = {"Asia/Kolkata": 5.5, "UTC": 0}
-offset = TZ_OFFSETS.get(CONFIG.get("timezone", "UTC"), 0)
-now_local = datetime.now(timezone.utc) + timedelta(hours=offset)
+# --- timezone helper (DST-aware, stdlib only) ---
+# zoneinfo tracks daylight saving automatically, so a named tz like
+# "America/New_York" or "Europe/London" stays correct year-round. "UTC" is the
+# default and is what the US+UK dual-region window is anchored to.
+try:
+    from zoneinfo import ZoneInfo
+    _tz = ZoneInfo(CONFIG.get("timezone", "UTC"))
+except Exception:
+    _tz = timezone.utc  # fallback if tzdata is unavailable
+now_local = datetime.now(_tz)
 
 
 def should_post_now():
@@ -35,19 +41,29 @@ def should_post_now():
 
     h = now_local.hour
     start, end = CONFIG["active_hours_start"], CONFIG["active_hours_end"]
-    if not (start <= h < end):
-        print(f"Outside active hours ({h}h local). Skipping.")
+    # window may cross midnight (e.g. 13 -> 5 UTC for the US+UK band).
+    if start <= end:
+        in_window = start <= h < end
+    else:
+        in_window = h >= start or h < end
+    if not in_window:
+        print(f"Outside active hours ({h}h {CONFIG.get('timezone','UTC')}). Skipping.")
         return False
 
-    today = now_local.strftime("%Y-%m-%d")
-    todays = [p for p in HISTORY["posts"] if p.get("local_date") == today]
+    # Count over a rolling 24h window rather than calendar date: the active
+    # window crosses midnight UTC, so a date-based quota would reset mid-session.
+    now_ts = datetime.now(timezone.utc).timestamp()
+    day_ago = now_ts - 24 * 3600
+    todays = [p for p in HISTORY["posts"] if p.get("timestamp", 0) >= day_ago]
     quota = CONFIG["posts_per_day"]
     if len(todays) >= quota:
-        print(f"Daily quota reached ({len(todays)}/{quota}). Skipping.")
+        print(f"Daily quota reached ({len(todays)}/{quota} in last 24h). Skipping.")
         return False
 
-    # minimum spacing so posts spread across the day instead of bunching
-    active_minutes = (end - start) * 60
+    # minimum spacing so posts spread across the window instead of bunching.
+    # window length must account for crossing midnight (e.g. 13->5 = 16h).
+    window_hours = (end - start) if start <= end else (24 - start + end)
+    active_minutes = window_hours * 60
     min_gap = max(active_minutes // quota - 5, 10)
     if todays:
         last = max(p["timestamp"] for p in todays)
