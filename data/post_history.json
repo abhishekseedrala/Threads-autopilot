@@ -658,6 +658,16 @@
       "local_date": "2026-07-20",
       "local_hour": 15,
       "insights": null
+    },
+    {
+      "media_id": "17934924930340552",
+      "text": "I stopped posting on Threads. My account didn't.\n\nIt reads its own analytics every morning, rewrites today's posts based on what actually worked, and hits publish \u2014 all while I sleep. Two hours to set up with free tools and the official Meta API. Tokens refresh themselves. The system improves every day without me touching it.\n\nThat's the real automation loop. Not scheduling. Learning.",
+      "angle": "bold_claim",
+      "provider": "deepseek",
+      "timestamp": 1784579152.433314,
+      "local_date": "2026-07-20",
+      "local_hour": 20,
+      "insights": null
     }
   ]
 }
