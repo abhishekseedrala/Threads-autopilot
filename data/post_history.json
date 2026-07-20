@@ -648,6 +648,16 @@
       "local_date": "2026-07-19",
       "local_hour": 21,
       "insights": null
+    },
+    {
+      "media_id": "18094866626458393",
+      "text": "The difference between a system that works and one that burns you out? A feedback loop.\n\nMost people automate posting. That\u2019s just faster burnout.\n\nAutomate the learning instead. Let your account read its own analytics every night, then rewrite tomorrow\u2019s posts based on what actually performed. That\u2019s the loop that compounds.\n\nI set this up once with free tools and the official Meta API. Two hours. Now the system improves itself while I do other things.",
+      "angle": "practical_tip",
+      "provider": "deepseek",
+      "timestamp": 1784562967.952409,
+      "local_date": "2026-07-20",
+      "local_hour": 15,
+      "insights": null
     }
   ]
 }
