@@ -722,6 +722,16 @@
       "local_date": "2026-07-21",
       "local_hour": 20,
       "insights": null
+    },
+    {
+      "media_id": "18090979742565929",
+      "text": "People think automation on Threads means risking your account.\n\nThey\u2019re confusing two completely different things.  \nScraping & click-simulators = ban.  \nOfficial Meta API = exactly what Meta built for this.\n\nThis account runs on the official API. Posts daily. Improves every day.  \nZero bans. Zero hacks. Zero manual work.\n\nThe myth survives because people lump all automation together.  \nReality? One breaks the rules. The other follows them perfectly.  \n\nTwo hours to set up. Free...",
+      "angle": "myth_buster",
+      "provider": "deepseek",
+      "timestamp": 1784678384.073189,
+      "local_date": "2026-07-21",
+      "local_hour": 23,
+      "insights": null
     }
   ]
 }
