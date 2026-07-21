@@ -712,6 +712,16 @@
       "local_date": "2026-07-21",
       "local_hour": 14,
       "insights": null
+    },
+    {
+      "media_id": "18013909238879454",
+      "text": "The biggest lie about Threads automation? That it sounds robotic.\n\nReality: Official API + free tools + daily analytics feedback = posts that learn your voice and improve. My system reads yesterday\u2019s data, adjusts tone, and writes better today. No robot. No burnout. Just a loop that compounds on itself.\n\nOne setup. Two hours. That\u2019s it.",
+      "angle": "myth_buster",
+      "provider": "deepseek",
+      "timestamp": 1784665327.336401,
+      "local_date": "2026-07-21",
+      "local_hour": 20,
+      "insights": null
     }
   ]
 }
