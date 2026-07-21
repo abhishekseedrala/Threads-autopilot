@@ -668,6 +668,16 @@
       "local_date": "2026-07-20",
       "local_hour": 20,
       "insights": null
+    },
+    {
+      "media_id": "18061677260589640",
+      "text": "Consistency isn't about willpower. It's about architecture.\n\nSet up a feedback loop once: posts generate analytics, analytics inform tomorrow's content, AI rewrites it better. Official Meta API. Free tools. Two hours.\n\nThe system improves itself. You just watch.",
+      "angle": "bold_claim",
+      "provider": "deepseek",
+      "timestamp": 1784592151.431735,
+      "local_date": "2026-07-21",
+      "local_hour": 0,
+      "insights": null
     }
   ]
 }
