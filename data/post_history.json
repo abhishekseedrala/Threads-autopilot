@@ -702,6 +702,16 @@
       "local_date": "2026-07-21",
       "local_hour": 3,
       "insights": null
+    },
+    {
+      "media_id": "17986827555010798",
+      "text": "Myth: Automated accounts sound like robots.\nTruth: Mine learned my voice from one setup. Now every post sounds like me \u2014 because it reads its own analytics and adjusts tone based on what actually connects.\n\nThat's not a bot. That's a feedback loop. Official Meta API. Free tools. Two hours.\n\nComment 'AUTO' and I'll send you the details",
+      "angle": "myth_buster",
+      "provider": "deepseek",
+      "timestamp": 1784642880.451376,
+      "local_date": "2026-07-21",
+      "local_hour": 14,
+      "insights": null
     }
   ]
 }
