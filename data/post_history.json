@@ -678,6 +678,16 @@
       "local_date": "2026-07-21",
       "local_hour": 0,
       "insights": null
+    },
+    {
+      "media_id": "18025365938848571",
+      "text": "Right now, this account is scanning yesterday\u2019s analytics. It found that posts with a specific angle (the \u201cbehind the scenes\u201d angle) performed best. So it picked that. It drafted this. It published this. You\u2019re reading a post the system wrote because the data told it to.\n\nI haven\u2019t touched this account since setup day. No scheduling. No logging in. The system reads, learns, writes, and repeats \u2014 every single day. Free tools. Official Meta API. One-time setup.\n\nThat\u2019s the only loop...",
+      "angle": "behind_the_scenes",
+      "provider": "deepseek",
+      "timestamp": 1784604882.000838,
+      "local_date": "2026-07-21",
+      "local_hour": 3,
+      "insights": null
     }
   ]
 }
