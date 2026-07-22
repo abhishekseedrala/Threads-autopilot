@@ -780,6 +780,16 @@
       "local_date": "2026-07-22",
       "local_hour": 14,
       "insights": null
+    },
+    {
+      "media_id": "17878180029503597",
+      "text": "I used to open Threads every morning with a blank text box and a dull ache in my chest. What do I post today? Every. Single. Day.\n\nOne Saturday afternoon I snapped. Sat down, wired up the official API to free tools, and told the system: here\u2019s my voice, here\u2019s my data, go learn.\n\nTwo hours later I closed the laptop. Haven\u2019t opened it since. The account posts daily, reads its own analytics, writes better tomorrow. My only job now? Watching it outgrow me.",
+      "angle": "mini_story",
+      "provider": "deepseek",
+      "timestamp": 1784751355.695565,
+      "local_date": "2026-07-22",
+      "local_hour": 20,
+      "insights": null
     }
   ]
 }
