@@ -1,5 +1,5 @@
 {
-  "text": "Automation on Threads doesn't mean sounding like a robot.  \nIt means building a feedback loop that writes better posts than you do \u2014 because it reads actual data from yesterday.\n\nI set that up once. Two hours. Free tools. Official API.  \nThe system improves itself every night. I haven't logged in since.\n\nThat's not a bot. That's a strategy.",
-  "angle": "bold_claim",
+  "text": "There's a myth about Threads automation. Here's the reality:\n\nThe official Meta API isn't a workaround. It's the legal path Meta designed for this. No scraping. No browser hacks. Just clean code talking to Meta's servers.\n\nThis account runs on it. Posts daily. Improves daily. Zero bans. Two hours to set up with free tools.\n\nThe difference between risky automation and smart automation? The API.\n\nGrab the blueprint (link in bio)",
+  "angle": "myth_buster",
   "provider": "deepseek"
 }
