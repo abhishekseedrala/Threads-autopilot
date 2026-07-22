@@ -732,6 +732,16 @@
       "local_date": "2026-07-21",
       "local_hour": 23,
       "insights": null
+    },
+    {
+      "media_id": "18045845996606302",
+      "text": "3 components of a hands-free Threads system:\n\n1. Official Meta API \u2014 zero ban risk, no browser hacks.\n2. Free tools (GitHub Actions + free AI) \u2014 $0/month forever.\n3. Daily analytics loop \u2014 post data rewrites tomorrow\u2019s content better.\n\nTwo hours to set up. Tokens refresh themselves. The system improves without you.\n\nFull setup guide in my bio",
+      "angle": "listicle_micro",
+      "provider": "deepseek",
+      "timestamp": 1784690428.386865,
+      "local_date": "2026-07-22",
+      "local_hour": 3,
+      "insights": null
     }
   ]
 }
