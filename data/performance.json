@@ -1,8 +1,8 @@
 {
   "angle_scores": {
     "bold_claim": {
-      "avg_score": 0.005,
-      "n": 8
+      "avg_score": 0.006,
+      "n": 10
     },
     "listicle_micro": {
       "avg_score": 0.009,
@@ -10,7 +10,7 @@
     },
     "practical_tip": {
       "avg_score": 0.006,
-      "n": 6
+      "n": 7
     },
     "before_after": {
       "avg_score": 0.004,
@@ -35,6 +35,10 @@
     "mini_story": {
       "avg_score": 0.002,
       "n": 2
+    },
+    "behind_the_scenes": {
+      "avg_score": 0.002,
+      "n": 1
     }
   },
   "hour_scores": {
@@ -53,7 +57,9 @@
     "9": 0.01,
     "19": 0.005,
     "8": 0.003,
-    "10": 0.005
+    "10": 0.005,
+    "0": 0.013,
+    "3": 0.002
   },
   "top_posts": [
     {
@@ -72,15 +78,15 @@
       "angle": "bold_claim"
     },
     {
+      "text": "Consistency isn't about willpower. It's about architecture.\n\nSet up a feedback loop once: posts generate analytics, analytics inform tomorrow's content, AI rewrites it better. Official Meta API. Free tools. Two hours.\n\nThe system improves itself. You just watch.",
+      "score": 0.013,
+      "angle": "bold_claim"
+    },
+    {
       "text": "Most creators waste hours manually posting every day. Instead, build a feedback loop:  \nPost \u2192 Read analytics \u2192 Let AI rewrite tomorrow\u2019s content based on what worked.  \n\nI set this up once with free tools (GitHub Actions + free AI APIs). It now runs itself. No daily grind.  \n\nThat\u2019s the whole trick. One setup, zero upkeep.",
       "score": 0.011,
       "angle": "practical_tip"
-    },
-    {
-      "text": "4 things nobody tells you about hands-free Threads growth:\n\n1. The official Meta API is the difference between \u201cautomation that works\u201d and \u201cautomation that gets banned.\u201d\n2. Free tools (GitHub Actions + free AI APIs) run everything \u2014 no SaaS bill, no subscription creep.\n3. The real magic isn\u2019t posting. It\u2019s the daily analytics loop: read what worked, write better tomorrow.\n4. Tokens auto-refresh. You set it up once and genuinely never log in again.",
-      "score": 0.011,
-      "angle": "listicle_micro"
     }
   ],
-  "last_updated": "2026-07-21T05:23:40.987783+00:00"
+  "last_updated": "2026-07-22T05:23:12.643993+00:00"
 }
