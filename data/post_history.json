@@ -770,6 +770,16 @@
       "local_date": "2026-07-22",
       "local_hour": 3,
       "insights": null
+    },
+    {
+      "media_id": "17892926601588440",
+      "text": "The content grind is a lie. Posting daily isn't commitment \u2014 it\u2019s a tax on your time. The real edge? A feedback loop that reads what works and writes tomorrow\u2019s post better, without you touching it. I set that up in two hours with free tools and the official API. Now my account outgrows me.",
+      "angle": "contrarian_take",
+      "provider": "deepseek",
+      "timestamp": 1784729418.400525,
+      "local_date": "2026-07-22",
+      "local_hour": 14,
+      "insights": null
     }
   ]
 }
