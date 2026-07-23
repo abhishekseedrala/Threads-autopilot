@@ -848,6 +848,16 @@
       "local_date": "2026-07-23",
       "local_hour": 19,
       "insights": null
+    },
+    {
+      "media_id": "18005990960952291",
+      "text": "3 things I learned from letting AI run my Threads account:\n\n1. A daily analytics loop works better than any content calendar.\n2. Official API means zero ban fear \u2014 Meta built it for this.\n3. Tokens that auto-refresh = I literally never log in.\n\nTwo hours setup. Free tools. The account writes itself now.",
+      "angle": "listicle_micro",
+      "provider": "deepseek",
+      "timestamp": 1784847750.320941,
+      "local_date": "2026-07-23",
+      "local_hour": 23,
+      "insights": null
     }
   ]
 }
