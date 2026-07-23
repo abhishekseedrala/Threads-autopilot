@@ -838,6 +838,16 @@
       "local_date": "2026-07-23",
       "local_hour": 15,
       "insights": null
+    },
+    {
+      "media_id": "18204303160368387",
+      "text": "3 things I learned from automating Threads with free tools:\n\n1. Official API is safe \u2014 Meta built it for this.\n2. GitHub Actions runs forever for free.\n3. A daily analytics loop makes posts smarter without me.\n\nTwo hours setup. That's the whole investment.\n\nFull setup guide in my bio",
+      "angle": "listicle_micro",
+      "provider": "deepseek",
+      "timestamp": 1784834867.880232,
+      "local_date": "2026-07-23",
+      "local_hour": 19,
+      "insights": null
     }
   ]
 }
