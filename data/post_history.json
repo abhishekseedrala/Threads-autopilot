@@ -828,6 +828,16 @@
       "local_date": "2026-07-23",
       "local_hour": 4,
       "insights": null
+    },
+    {
+      "media_id": "18126552061657726",
+      "text": "The idea that automation on Threads means risking your account? That\u2019s only true if you\u2019re scraping or faking clicks.  \n\nThe official Meta API is literally built for this. Uses the same endpoints as the Threads app itself. No bans. No hacks.  \n\nThis account runs on it. Posts daily. Learns from its own analytics. I haven\u2019t logged in since setup day.  \n\nFree tools. Two hours once. The myth dies when you know the difference.",
+      "angle": "myth_buster",
+      "provider": "deepseek",
+      "timestamp": 1784819695.751412,
+      "local_date": "2026-07-23",
+      "local_hour": 15,
+      "insights": null
     }
   ]
 }
