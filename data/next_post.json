@@ -1,5 +1,5 @@
 {
-  "text": "People think automated accounts are lazy.  \n\nWrong.  \n\nAn account that reads its own analytics, improves its tone, and posts something better tomorrow based on real data is working harder than any human grinding manually.  \n\nThat\u2019s not lazy. That\u2019s a feedback loop.  \n\nOfficial Meta API. Free tools. One-time setup.  \n\nLink in bio if you want your account to run itself",
-  "angle": "myth_buster",
+  "text": "How many hours this month did you spend writing Threads posts you can't even remember writing?\n\nIf the answer makes you wince, that's the problem. The algorithm rewards consistency. But consistency doesn't require you to sit in front of a text box every morning. Official API + free tools + a daily analytics loop. Two hours setup. Then it writes itself while you do literally anything else.\n\nWhat\u2019s your biggest time-suck on Threads right now?",
+  "angle": "question_to_audience",
   "provider": "deepseek"
 }
