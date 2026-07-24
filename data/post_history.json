@@ -791,13 +791,13 @@
       "local_date": "2026-07-22",
       "local_hour": 3,
       "insights": {
-        "views": 3,
+        "views": 4,
         "likes": 0,
         "replies": 0,
         "reposts": 0,
         "quotes": 0
       },
-      "score": 0.003
+      "score": 0.004
     },
     {
       "media_id": "17892926601588440",
@@ -807,7 +807,14 @@
       "timestamp": 1784729418.400525,
       "local_date": "2026-07-22",
       "local_hour": 14,
-      "insights": null
+      "insights": {
+        "views": 4,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      },
+      "score": 0.004
     },
     {
       "media_id": "17878180029503597",
@@ -817,7 +824,14 @@
       "timestamp": 1784751355.695565,
       "local_date": "2026-07-22",
       "local_hour": 20,
-      "insights": null
+      "insights": {
+        "views": 4,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      },
+      "score": 0.004
     },
     {
       "media_id": "18044424266804238",
@@ -827,7 +841,14 @@
       "timestamp": 1784780380.961193,
       "local_date": "2026-07-23",
       "local_hour": 4,
-      "insights": null
+      "insights": {
+        "views": 3,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      },
+      "score": 0.003
     },
     {
       "media_id": "18126552061657726",
