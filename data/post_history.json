@@ -889,6 +889,16 @@
       "local_date": "2026-07-24",
       "local_hour": 4,
       "insights": null
+    },
+    {
+      "media_id": "17923000971400590",
+      "text": "3 things I didn\u2019t expect when my Threads account started writing itself:\n\n1. The official API makes automation boringly safe \u2014 no bots, no bans, just endpoints.\n2. Free AI + GitHub Actions = a daily analytics loop that rewrites posts better than I could.\n3. Tokens refresh themselves. I\u2019ve forgotten my password. Account still posts.\n\nTwo hour setup. Then you\u2019re just watching the compounding.",
+      "angle": "listicle_micro",
+      "provider": "deepseek",
+      "timestamp": 1784905240.107579,
+      "local_date": "2026-07-24",
+      "local_hour": 15,
+      "insights": null
     }
   ]
 }
