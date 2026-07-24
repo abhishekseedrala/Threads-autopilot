@@ -858,6 +858,16 @@
       "local_date": "2026-07-23",
       "local_hour": 23,
       "insights": null
+    },
+    {
+      "media_id": "18105845059850247",
+      "text": "The trick to sustainable Threads growth isn't posting more \u2014 it's letting your data write tomorrow's post. I set up a daily loop where the official API reads yesterday's analytics, free AI drafts a better version, and GitHub Actions publishes it. No manual work. Just a system that improves itself. Two hours setup.\n\nFull setup guide in my bio",
+      "angle": "practical_tip",
+      "provider": "deepseek",
+      "timestamp": 1784866813.634843,
+      "local_date": "2026-07-24",
+      "local_hour": 4,
+      "insights": null
     }
   ]
 }
