@@ -1,0 +1,5 @@
+{
+  "text": "People think automation on Threads means sneaky bots and ban risks.\n\nThat's mixing up two things:\n- Browser hacks and scrapers? Yes, risky.\n- Official Meta API? That's the same pipeline Threads itself uses.\n\nI built a system that posts daily, reads its own analytics, writes better tomorrow. All through the official API. No bans. No manual work.\n\nTwo hours setup. Free tools. The account improves without me.\n\nThe myth stops when you know what's actually possible.",
+  "angle": "myth_buster",
+  "provider": "deepseek"
+}
